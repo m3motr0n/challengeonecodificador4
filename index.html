@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Prueba flex encriptador</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <header>
+        <div class="head1"><img class="logoTop" src="./imagenes/AluraLogo_50.png" alt="Logotipo Alura"></div>
+        <div class="head2"><img class="logoTop2" src="./imagenes/logo-one_1_50.png" alt="Logotipo Alura"></div>            
+    </header>
+    <main>
+        <div class="contenedorPrincipal">
+            <section class="contenedorConBotones">
+                <div class="ingresoTexto">
+                    <textarea id="areaIngresar" class="areaIngresar" cols=auto rows="10" placeholder="Ingrese texto aquí.."></textarea>
+                    <div class="refresh"><input type="image" src="./imagenes/reset_RED_50.png" onclick="refreshPage()"name="btnreset" class="btnRefresh" id="btnRefresh" /></div>
+                </div>
+                <div class="botones">
+                    <input id="btnEncriptar" class="btn_encriptar" type="button" onclick="encriptado()" value="Encriptar">
+                    <input id="btnDesencriptar" class="btn_desencriptar" type="button" onclick="desencriptado()" value="Desencriptar">
+                </div> 
+            </section>            
+                <div class="muestraTexto">
+                    <textarea id="resultado" class="resultado" cols=auto rows="9")></textarea>
+                    <img src="./imagenes/detective-1424831_50.png" id="imgMu">
+                    <h2 id="avisoh2">Ningún mensaje fue encontrado</h2>
+                    <h4 id="avisoh4">Ingresa el texto que deseas encriptar o desencriptar</h4>
+                    <input id="btn_copiar" class="btn_copiar" type="button" onclick="copiado()" value="Copiar">
+                </div>
+        </div>
+    </main>
+    <footer>
+            <div class="foot1"></div>
+            <div class="foot2">
+                <a href="https://www.linkedin.com/in/guillermo-rivera-mkt/" target="_blank"><img class="ft1" src="./imagenes/NicePng_linkedin-logo-png_277988_50.png" alt="Enlace a linkedIn"></a>
+                <a href="https://github.com/m3motr0n" target="_blank"><img class="ft2" src="./imagenes/pngegg_50.png" alt="Enlace a Github"></a>
+                <a href="https://www.facebook.com/memolestaz" target="_blank"><img class="ft3" src="./imagenes/toppng.com-facebook-logo-white-501x425_50.png" alt="Enlace a Facebook"></a>
+                <p class="copyr">&copy; Todos los derechos reservados Guillermo Rivera para Alura Latam | Oracle ONE</p>   
+            </div>
+            <div class="foot3">
+                <img class="ft4" src="./imagenes/logo-aluralatam-oracle.svg" alt="Logotipo Alura">
+            </div>
+    </footer>
+    <script src="./js/logica.js"></script>
+</body>
+</html>
